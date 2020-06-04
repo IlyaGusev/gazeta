@@ -12,6 +12,9 @@
 * Test with oracle summaries: [gazeta_test_oracle.jsonl](https://www.dropbox.com/s/cjbciavdxg54mlq/gazeta_test_oracle.jsonl)
 * Preprocessed data for mBART: [gazeta_data_mbart_600_160.tar.gz](https://www.dropbox.com/s/rqnwjuvp91vhni5/gazeta_data_mbart_600_160.tar.gz)
 
+### Github:
+https://github.com/IlyaGusev/gazeta/releases/tag/0.1
+
 
 ## Additional notes
 * Cleaning: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Ed_chVrslp_7vJNS3PmRC0_ZJrRQYv0C)
