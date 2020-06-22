@@ -1,4 +1,5 @@
 # Gazeta dataset
+Paper: [Dataset for Automatic Summarization of Russian News](https://arxiv.org/abs/2006.11063)
 
 ## Download
 ### Dropbox:
