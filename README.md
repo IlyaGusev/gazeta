@@ -16,6 +16,9 @@ Paper: [Dataset for Automatic Summarization of Russian News](https://arxiv.org/a
 ### Github:
 https://github.com/IlyaGusev/gazeta/releases/tag/0.1
 
+### Kaggle:
+https://www.kaggle.com/phoenix120/gazeta-summaries
+
 
 ## Additional notes
 * Legal basis for distribution of the dataset: https://www.gazeta.ru/credits.shtml, paragraph 2.1.2. All rights belong to "www.gazeta.ru". This dataset can be removed at the request of the copyright holder. Usage of this dataset is possible only for personal purposes on a non-commercial basis. 
