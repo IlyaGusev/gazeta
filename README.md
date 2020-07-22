@@ -18,6 +18,7 @@ https://github.com/IlyaGusev/gazeta/releases/tag/0.1
 
 
 ## Additional notes
+* Legal basis for dataset distribution: https://www.gazeta.ru/credits.shtml, paragraph 2.1.2
 * Cleaning: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Ed_chVrslp_7vJNS3PmRC0_ZJrRQYv0C)
 * Data analysis: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Rp4-COj8RNbvH4jvRQkc5fik5XuhGU5y)
 * Summarization methods: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1B26oDFEKSNCcI0BPkGXgxi13pbadriyN)
