@@ -11,7 +11,7 @@ Paper: [Dataset for Automatic Summarization of Russian News](https://arxiv.org/a
 * Train with oracle summaries: [gazeta_train_oracle.jsonl](https://www.dropbox.com/s/5dva37fm1v4zp3j/gazeta_train_oracle.jsonl)
 * Validation with oracle summaries: [gazeta_val_oracle.jsonl](https://www.dropbox.com/s/hc9tab4ewe352jt/gazeta_val_oracle.jsonl)
 * Test with oracle summaries: [gazeta_test_oracle.jsonl](https://www.dropbox.com/s/cjbciavdxg54mlq/gazeta_test_oracle.jsonl)
-* Preprocessed data for mBART: [gazeta_data_mbart_600_160.tar.gz](https://www.dropbox.com/s/rqnwjuvp91vhni5/gazeta_data_mbart_600_160.tar.gz)
+* Preprocessed data for mBART: [gazeta_data_mbart_600_160_v2.tar.gz](https://www.dropbox.com/s/70d75da8h8f16ox/gazeta_data_mbart_600_160_v2.tar.gz)
 
 ### Github:
 https://github.com/IlyaGusev/gazeta/releases/tag/0.1
@@ -19,6 +19,8 @@ https://github.com/IlyaGusev/gazeta/releases/tag/0.1
 ### Kaggle:
 https://www.kaggle.com/phoenix120/gazeta-summaries
 
+### Trained MBART Model:
+https://huggingface.co/IlyaGusev/mbart_ru_sum_gazeta
 
 ## Additional notes
 * Legal basis for distribution of the dataset: https://www.gazeta.ru/credits.shtml, paragraph 2.1.2. All rights belong to "www.gazeta.ru". This dataset can be removed at the request of the copyright holder. Usage of this dataset is possible only for personal purposes on a non-commercial basis. 
