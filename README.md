@@ -19,7 +19,7 @@ https://github.com/IlyaGusev/gazeta/releases/tag/0.1
 ### Kaggle:
 https://www.kaggle.com/phoenix120/gazeta-summaries
 
-### Trained MBART Model:
+### Trained MBART model:
 https://huggingface.co/IlyaGusev/mbart_ru_sum_gazeta
 
 ## Additional notes
