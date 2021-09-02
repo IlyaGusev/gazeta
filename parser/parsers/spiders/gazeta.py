@@ -9,7 +9,8 @@ from parsers.spiders.base import NewsSpider, NewsSpiderConfig
 
 class GazetaSpider(NewsSpider):
     name = "gazeta"
-    start_urls = ["https://www.gazeta.ru/sitemap.xml"]
+    base_url = "https://www.gazeta.ru/news/?p=page&d={}"
+    start_urls = [base_url.format(int(datetime.utcnow().timestamp()))]
 
     config = NewsSpiderConfig(
         title_path="//div[contains(@itemprop, 'alternativeHeadline')]//text() | //h1/text()",
@@ -22,37 +23,22 @@ class GazetaSpider(NewsSpider):
     )
 
     def parse(self, response):
-        body = response.body
-        links = Selector(text=body).xpath('//loc/text()').getall()
-        last_modif_dts = Selector(text=body).xpath('//lastmod/text()').getall()
-        for link, last_modif_dt in zip(links, last_modif_dts):
-            last_modif_dt = datetime.strptime(last_modif_dt.replace(':', ''), '%Y-%m-%dT%H%M%S%z')
-            if last_modif_dt.date() >= self.until_date:
-                yield Request(url=link, callback=self.parse_sub_sitemap)
+        links = response.xpath("//div[contains(@class, 'b_ear-title')]/a/@href").extract()
+        dates = response.xpath("//div[contains(@class, 'b_ear')]/@data-pubtime").extract()
+        assert len(links) == len(dates), "{} {}".format(len(links), len(dates))
+        min_pub_time = None
+        until_pub_time = int(datetime.combine(self.until_date, datetime.min.time()).timestamp())
+        for url, pub_time in zip(links, dates):
+            pub_time = int(pub_time)
+            min_pub_time = pub_time if not min_pub_time else min(min_pub_time, pub_time)
+            if min_pub_time <= until_pub_time:
+                break
+            url = "https://www.gazeta.ru" + url
+            if url.endswith('.shtml') and not url.endswith('index.shtml'):
+                yield Request(url=url, callback=self.parse_document)
+        if min_pub_time and min_pub_time > until_pub_time:
+            yield Request(url=self.base_url.format(min_pub_time), callback=self.parse)
 
-    def parse_sub_sitemap(self, response):
-        body = response.body
-        links = Selector(text=body).xpath('//loc/text()').getall()
-        last_modif_dts = Selector(text=body).xpath('//lastmod/text()').getall()
-
-        for link, last_modif_dt in zip(links, last_modif_dts):
-            last_modif_dt = datetime.strptime(last_modif_dt.replace(':', ''), '%Y-%m-%dT%H%M%S%z')
-            if last_modif_dt.date() >= self.until_date:
-                yield Request(url=link, callback=self.parse_articles_sitemap)
-
-    def parse_articles_sitemap(self, response):
-        # Parse sub sitemaps
-        body = response.body
-        links = Selector(text=body).xpath('//loc/text()').getall()
-        last_modif_dts = Selector(text=body).xpath('//lastmod/text()').getall()
-
-        for link, last_modif_dt in zip(links, last_modif_dts):
-            # Convert last_modif_dt to datetime
-            last_modif_dt = datetime.strptime(last_modif_dt.replace(':', ''), '%Y-%m-%dT%H%M%S%z')
-
-            if last_modif_dt.date() >= self.until_date:
-                if link.endswith('.shtml') and not link.endswith('index.shtml'):
-                    yield Request(url=link, callback=self.parse_document)
 
     def parse_document(self, response):
         for res in super().parse_document(response):
@@ -61,6 +47,7 @@ class GazetaSpider(NewsSpider):
             if "text" not in res:
                 return
             res['text'] = [x for x in res['text'] if x != '\n' and not x.startswith(ad_parts)]
+            res["text"] = [x.replace("\xa0", " ") for x in res['text']]
 
             # Remove ":" in timezone
             pub_dt = res['date'][0]
