@@ -16,14 +16,10 @@ Paper: [Dataset for Automatic Summarization of Russian News](https://arxiv.org/a
 UPDATE:
 * v2, Full dataset: [gazeta_jsonl_v2.tar.gz](https://www.dropbox.com/s/lb50mk5jujjjqbi/gazeta_jsonl_v2.tar.gz)
 
-### Github:
-https://github.com/IlyaGusev/gazeta/releases/tag/1.0
-
-### Kaggle:
-https://www.kaggle.com/phoenix120/gazeta-summaries
-
-## Huggingface:
-https://huggingface.co/datasets/IlyaGusev/gazeta
+### Other sources:
+GitHub: https://github.com/IlyaGusev/gazeta/releases/tag/1.0
+Kaggle: https://www.kaggle.com/phoenix120/gazeta-summaries
+Huggingface: https://huggingface.co/datasets/IlyaGusev/gazeta
 
 ### Trained MBART model:
 https://huggingface.co/IlyaGusev/mbart_ru_sum_gazeta
