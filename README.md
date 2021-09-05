@@ -23,6 +23,9 @@ https://github.com/IlyaGusev/gazeta/releases/tag/0.1
 ### Kaggle:
 https://www.kaggle.com/phoenix120/gazeta-summaries
 
+## Huggingface:
+https://huggingface.co/datasets/IlyaGusev/gazeta
+
 ### Trained MBART model:
 https://huggingface.co/IlyaGusev/mbart_ru_sum_gazeta
 
