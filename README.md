@@ -13,8 +13,10 @@ Paper: [Dataset for Automatic Summarization of Russian News](https://arxiv.org/a
 * v1, Test with oracle summaries: [gazeta_test_oracle.jsonl](https://www.dropbox.com/s/cjbciavdxg54mlq/gazeta_test_oracle.jsonl)
 * v1, Preprocessed data for mBART: [gazeta_data_mbart_600_160_v2.tar.gz](https://www.dropbox.com/s/70d75da8h8f16ox/gazeta_data_mbart_600_160_v2.tar.gz)
 
-UPDATE:
+**UPDATE**:
 * v2, Full dataset: [gazeta_jsonl_v2.tar.gz](https://www.dropbox.com/s/lb50mk5jujjjqbi/gazeta_jsonl_v2.tar.gz)
+* v2, Diff: [gazeta_new.jsonl](https://www.dropbox.com/s/c5y8q7pb3kv6cdu/gazeta_new.jsonl)
+* v2, Raw diff without any clenaning: [gazeta_raw_new.jsonl](https://www.dropbox.com/s/gyv841mph04qweu/gazeta_raw_new.jsonl)
 
 ### Other sources:
 * GitHub: https://github.com/IlyaGusev/gazeta/releases/tag/1.0
