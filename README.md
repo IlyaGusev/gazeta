@@ -3,15 +3,19 @@ Paper: [Dataset for Automatic Summarization of Russian News](https://arxiv.org/a
 
 ## Download
 ### Dropbox:
-* Full dataset: [gazeta_jsonl.tar.gz](https://www.dropbox.com/s/cmpfvzxdknkeal4/gazeta_jsonl.tar.gz)
-* Train: [gazeta_train.jsonl](https://www.dropbox.com/s/43l702z5a5i2w8j/gazeta_train.jsonl)
-* Validation: [gazeta_val.jsonl](https://www.dropbox.com/s/k2egt3sug0hb185/gazeta_val.jsonl)
-* Test: [gazeta_test.jsonl](https://www.dropbox.com/s/3gki5n5djs9w0v6/gazeta_test.jsonl)
-* Raw version without any cleaning (not recommended): [gazeta_raw.txt](https://www.dropbox.com/s/4fxj5wmt7tjr5f2/gazeta_raw.txt)
-* Train with oracle summaries: [gazeta_train_oracle.jsonl](https://www.dropbox.com/s/5dva37fm1v4zp3j/gazeta_train_oracle.jsonl)
-* Validation with oracle summaries: [gazeta_val_oracle.jsonl](https://www.dropbox.com/s/hc9tab4ewe352jt/gazeta_val_oracle.jsonl)
-* Test with oracle summaries: [gazeta_test_oracle.jsonl](https://www.dropbox.com/s/cjbciavdxg54mlq/gazeta_test_oracle.jsonl)
-* Preprocessed data for mBART: [gazeta_data_mbart_600_160_v2.tar.gz](https://www.dropbox.com/s/70d75da8h8f16ox/gazeta_data_mbart_600_160_v2.tar.gz)
+* v1, Full dataset: [gazeta_jsonl.tar.gz](https://www.dropbox.com/s/cmpfvzxdknkeal4/gazeta_jsonl.tar.gz)
+* v1, Train: [gazeta_train.jsonl](https://www.dropbox.com/s/43l702z5a5i2w8j/gazeta_train.jsonl)
+* v1, Validation: [gazeta_val.jsonl](https://www.dropbox.com/s/k2egt3sug0hb185/gazeta_val.jsonl)
+* v1, Test: [gazeta_test.jsonl](https://www.dropbox.com/s/3gki5n5djs9w0v6/gazeta_test.jsonl)
+* v1, Raw version without any cleaning (not recommended): [gazeta_raw.txt](https://www.dropbox.com/s/4fxj5wmt7tjr5f2/gazeta_raw.txt)
+* v1, Train with oracle summaries: [gazeta_train_oracle.jsonl](https://www.dropbox.com/s/5dva37fm1v4zp3j/gazeta_train_oracle.jsonl)
+* v1, Validation with oracle summaries: [gazeta_val_oracle.jsonl](https://www.dropbox.com/s/hc9tab4ewe352jt/gazeta_val_oracle.jsonl)
+* v1, Test with oracle summaries: [gazeta_test_oracle.jsonl](https://www.dropbox.com/s/cjbciavdxg54mlq/gazeta_test_oracle.jsonl)
+* v1, Preprocessed data for mBART: [gazeta_data_mbart_600_160_v2.tar.gz](https://www.dropbox.com/s/70d75da8h8f16ox/gazeta_data_mbart_600_160_v2.tar.gz)
+
+UPDATE:
+* v1->v2 diff: [gazeta_new.jsonl](https://www.dropbox.com/s/wr6d2doj88otdw0/gazeta_new.jsonl)
+* v2, Full dataset: [gazeta_jsonl_v2.tar.gz](https://www.dropbox.com/s/cbtio6h0lmbkk0l/gazeta_jsonl_v2.tar.gz)
 
 ### Github:
 https://github.com/IlyaGusev/gazeta/releases/tag/0.1
