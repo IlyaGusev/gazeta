@@ -14,11 +14,10 @@ Paper: [Dataset for Automatic Summarization of Russian News](https://arxiv.org/a
 * v1, Preprocessed data for mBART: [gazeta_data_mbart_600_160_v2.tar.gz](https://www.dropbox.com/s/70d75da8h8f16ox/gazeta_data_mbart_600_160_v2.tar.gz)
 
 UPDATE:
-* v1->v2 diff: [gazeta_new.jsonl](https://www.dropbox.com/s/wr6d2doj88otdw0/gazeta_new.jsonl)
-* v2, Full dataset: [gazeta_jsonl_v2.tar.gz](https://www.dropbox.com/s/cbtio6h0lmbkk0l/gazeta_jsonl_v2.tar.gz)
+* v2, Full dataset: [gazeta_jsonl_v2.tar.gz](https://www.dropbox.com/s/lb50mk5jujjjqbi/gazeta_jsonl_v2.tar.gz)
 
 ### Github:
-https://github.com/IlyaGusev/gazeta/releases/tag/0.1
+https://github.com/IlyaGusev/gazeta/releases/tag/1.0
 
 ### Kaggle:
 https://www.kaggle.com/phoenix120/gazeta-summaries
