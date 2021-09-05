@@ -9,8 +9,25 @@ from parsers.spiders.base import NewsSpider, NewsSpiderConfig
 
 class GazetaSpider(NewsSpider):
     name = "gazeta"
-    base_url = "https://www.gazeta.ru/news/?p=page&d={}"
-    start_urls = [base_url.format(int(datetime.utcnow().timestamp()))]
+    rubrics = (
+        "social",
+        "politics",
+        "business",
+        "army",
+        "culture",
+        "science",
+        "sport",
+        "tech",
+        "auto",
+        "lifestyle",
+        "economics",
+        "news"
+    )
+    start_urls = [
+        "https://www.gazeta.ru/{}/?p=page&d={}".format(
+            rubric, int(datetime.utcnow().timestamp())
+        ) for rubric in rubrics
+    ]
 
     config = NewsSpiderConfig(
         title_path="//div[contains(@itemprop, 'alternativeHeadline')]//text() | //h1/text()",
@@ -25,7 +42,7 @@ class GazetaSpider(NewsSpider):
     def parse(self, response):
         links = response.xpath("//div[contains(@class, 'b_ear-title')]/a/@href").extract()
         dates = response.xpath("//div[contains(@class, 'b_ear')]/@data-pubtime").extract()
-        assert len(links) == len(dates), "{} {}".format(len(links), len(dates))
+        assert len(links) == len(dates), "ASSERT {} {}".format(len(links), len(dates))
         min_pub_time = None
         until_pub_time = int(datetime.combine(self.until_date, datetime.min.time()).timestamp())
         for url, pub_time in zip(links, dates):
@@ -36,8 +53,17 @@ class GazetaSpider(NewsSpider):
             url = "https://www.gazeta.ru" + url
             if url.endswith('.shtml') and not url.endswith('index.shtml'):
                 yield Request(url=url, callback=self.parse_document)
-        if min_pub_time and min_pub_time > until_pub_time:
-            yield Request(url=self.base_url.format(min_pub_time), callback=self.parse)
+        url = response.request.url
+        url_parts = url.split("=")
+        if not min_pub_time:
+            step = 24 * 3600 * 3
+            min_pub_time = int(url_parts[-1]) - step
+            self.logger.debug("@No news at {}, scanning {}".format(url, min_pub_time))
+        if min_pub_time > until_pub_time:
+            url = "=".join(url_parts[:-1]) + "=" + str(min_pub_time)
+            yield Request(url=url, callback=self.parse)
+        else:
+            self.logger.debug("@Stopped {}, min pub time {}".format(url, min_pub_time))
 
 
     def parse_document(self, response):
