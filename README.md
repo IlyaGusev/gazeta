@@ -19,7 +19,7 @@ Paper: [Dataset for Automatic Summarization of Russian News](https://arxiv.org/a
 * v2/v1 raw diff without any clenaning: [gazeta_raw_new.jsonl](https://www.dropbox.com/s/gyv841mph04qweu/gazeta_raw_new.jsonl)
 
 ### Other sources:
-* GitHub: https://github.com/IlyaGusev/gazeta/releases/tag/1.0
+* GitHub: https://github.com/IlyaGusev/gazeta/releases/tag/2.0
 * Kaggle: https://www.kaggle.com/phoenix120/gazeta-summaries
 * Huggingface: https://huggingface.co/datasets/IlyaGusev/gazeta
 
