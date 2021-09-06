@@ -40,7 +40,7 @@ https://huggingface.co/IlyaGusev/mbart_ru_sum_gazeta
 ## Citation
 
 ```bibtex
-@InProceedings{10.1007/978-3-030-59082-6_9,
+@InProceedings{gusev2020gazeta,
     author="Gusev, Ilya",
     editor="Filchenkov, Andrey and Kauttonen, Janne and Pivovarova, Lidia",
     title="Dataset for Automatic Summarization of Russian News",
