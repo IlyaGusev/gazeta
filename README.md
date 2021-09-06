@@ -40,16 +40,16 @@ https://huggingface.co/IlyaGusev/mbart_ru_sum_gazeta
 ## Citation
 
 ```bibtex
-@InProceedings{gusev2020gazeta,
+@InProceedings{Gusev2020gazeta,
     author="Gusev, Ilya",
-    editor="Filchenkov, Andrey and Kauttonen, Janne and Pivovarova, Lidia",
     title="Dataset for Automatic Summarization of Russian News",
     booktitle="Artificial Intelligence and Natural Language",
     year="2020",
     publisher="Springer International Publishing",
     address="Cham",
-    pages="122--134",
-    isbn="978-3-030-59082-6"
+    pages="{122--134}",
+    isbn="978-3-030-59082-6",
+    doi={10.1007/978-3-030-59082-6_9}
 }
 ```
 
