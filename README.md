@@ -31,7 +31,9 @@ https://huggingface.co/IlyaGusev/mbart_ru_sum_gazeta
 * Cleaning: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Ed_chVrslp_7vJNS3PmRC0_ZJrRQYv0C)
 * Data analysis: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Rp4-COj8RNbvH4jvRQkc5fik5XuhGU5y)
 * Summarization methods: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1B26oDFEKSNCcI0BPkGXgxi13pbadriyN)
-* If you are interested in another Russian summarization dataset, check out a Russian part of [XL-Sum](https://github.com/csebuetnlp/xl-sum)
+* Other Russian summarization datasets:
+  * Russian part of [XL-Sum](https://github.com/csebuetnlp/xl-sum), parsed from www.bbc.com/russian
+  * Russian part of [MLSUM](https://github.com/ThomasScialom/MLSUM), parsed from www.mk.ru
 
 ## Contacts
 * Gitter chat: [summarus/community](https://gitter.im/summarus/community)
