@@ -16,6 +16,7 @@ Paper: [Dataset for Automatic Summarization of Russian News](https://arxiv.org/a
 
 **UPDATE**:
 * v2, Full dataset: [gazeta_jsonl_v2.tar.gz](https://www.dropbox.com/s/lb50mk5jujjjqbi/gazeta_jsonl_v2.tar.gz)
+* v2, Spacy analyses: [gazeta_v2_spacy.tar.gz](https://www.dropbox.com/s/tpdiymm6p4tw7s9/gazeta_v2_spacy.tar.gz)
 * v2/v1 diff: [gazeta_new.jsonl](https://www.dropbox.com/s/c5y8q7pb3kv6cdu/gazeta_new.jsonl)
 * v2/v1 raw diff without any clenaning: [gazeta_raw_new.jsonl](https://www.dropbox.com/s/gyv841mph04qweu/gazeta_raw_new.jsonl)
 
