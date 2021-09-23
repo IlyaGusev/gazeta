@@ -39,7 +39,6 @@ https://huggingface.co/IlyaGusev/mbart_ru_sum_gazeta
   * Russian part of [MLSUM](https://github.com/ThomasScialom/MLSUM), parsed from www.mk.ru, 27063 samples
 
 ## Contacts
-* Gitter chat: [summarus/community](https://gitter.im/summarus/community)
 * Telegram: [@YallenGusev](https://t.me/YallenGusev)
 
 ## Citation
