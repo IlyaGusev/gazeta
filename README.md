@@ -30,7 +30,10 @@ Paper: [Dataset for Automatic Summarization of Russian News](https://arxiv.org/a
 https://huggingface.co/IlyaGusev/mbart_ru_sum_gazeta
 
 ## Additional notes
-* Legal basis for distribution of the dataset: https://www.gazeta.ru/credits.shtml, paragraph 2.1.2. All rights belong to "www.gazeta.ru". This dataset can be removed at the request of the copyright holder. Usage of this dataset is possible only for personal purposes on a non-commercial basis. 
+* Legal basis for distribution of the dataset:
+  * [Gazeta Terms of Use](https://www.gazeta.ru/credits.shtml), paragraph 2.1.2.
+  * [Russian Civil Code 1274](http://www.consultant.ru/document/cons_doc_LAW_64629/84bbd636598a59112a4fe972432343dd4f51da1d/), part 1
+  * All rights belong to "www.gazeta.ru". This dataset can be removed at the request of the copyright holder. Usage of this dataset is possible only on a non-commercial basis. 
 * Cleaning: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Ed_chVrslp_7vJNS3PmRC0_ZJrRQYv0C)
 * Data analysis: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Rp4-COj8RNbvH4jvRQkc5fik5XuhGU5y)
 * Summarization methods: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1B26oDFEKSNCcI0BPkGXgxi13pbadriyN)
