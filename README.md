@@ -40,6 +40,7 @@ https://huggingface.co/IlyaGusev/mbart_ru_sum_gazeta
 * Other Russian summarization datasets:
   * Russian part of [XL-Sum](https://github.com/csebuetnlp/xl-sum), parsed from www.bbc.com/russian, 77803 samples
   * Russian part of [MLSUM](https://github.com/ThomasScialom/MLSUM), parsed from www.mk.ru, 27063 samples
+  * Russian part of [WikiLingua](https://github.com/esdurmus/Wikilingua), parsed from WikiHow, 52928 samples
 
 ## Contacts
 * Telegram: [@YallenGusev](https://t.me/YallenGusev)
